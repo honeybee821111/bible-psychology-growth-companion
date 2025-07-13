@@ -6,7 +6,7 @@ import time # 로딩 스피너를 위해 추가
 # 깃허브에 바로 배포 시 스트림릿 클라우드 또는 다른 PaaS에서 st.secrets를 읽어옵니다.
 # 로컬 개발 시에는 .streamlit/secrets.toml 파일에 API_KEY를 설정해야 합니다.
 try:
-    gemini_api_key = st.secrets["API_KEY"]
+    gemini_api_key = st.secrets["AIzaSyA6d46XMcgFUQbtpeROGZFR_cyx2qf9uQs"]
     genai.configure(api_key=gemini_api_key)
 except KeyError:
     st.error("⚠️ API 키를 찾을 수 없습니다. '.streamlit/secrets.toml' 파일 또는 Streamlit Cloud Secrets에 'API_KEY'를 설정해주세요.")
